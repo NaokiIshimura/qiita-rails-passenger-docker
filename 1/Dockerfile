@@ -37,12 +37,12 @@ ENV RAILS_ENV development
 COPY --chown=app:app rails-app /home/app/webapp
 
 # bundlerのインストール
-# 実行しなかった場合、アクセス時に以下のエラーが発生
+# 実行しなかった場合、Railsアプリにアクセスした時に以下のエラーが発生する
 # cannot load such file -- bundler/dep_proxy (LoadError)
 RUN gem install bundler
 
 # tzdataのインストール
-# 実行しなかった場合、アクセス時に以下のエラーが発生
+# 実行しなかった場合、Railsアプリにアクセスした時に以下のエラーが発生する
 # tzinfo-data is not present.
 # Please add gem 'tzinfo-data' to your Gemfile
 # and run bundle install (TZInfo::DataSourceNotFound)
