@@ -2,7 +2,7 @@
 
 ## 解説
 
-[passenger\-dockerでRailsアプリをコンテナ化する（2\. DBに接続できるようにする） \- Qiita](https://qiita.com/NaokiIshimura/items/dd76d67ca023bc9351ce)
+[passenger\-dockerでRailsアプリをコンテナ化する（2\. コンテナからDBに接続できるようにする） \- Qiita](https://qiita.com/NaokiIshimura/items/dd76d67ca023bc9351ce)
 
 ## 参考
 
