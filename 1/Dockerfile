@@ -46,6 +46,9 @@ RUN gem install bundler
 RUN apt-get update && apt-get install -y \
   tzdata
 
+# タイムゾーンをJSTに設定
+ENV TZ=Asia/Tokyo
+  
 # bundle install
 WORKDIR /home/app/webapp
 RUN bundle install
@@ -55,4 +58,3 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Use baseimage-docker's init process.
 CMD ["/sbin/my_init"]
-
